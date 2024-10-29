@@ -1,0 +1,99 @@
+body {
+    background-color: aquamarine;
+    color: rgb(5, 136, 197);
+}
+
+h1 {
+    color: rgb(5, 136, 197);
+    background-color: white;
+    border: solid rgb(5, 136, 197);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 50px;
+    padding: 1%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: solid rgb(5, 136, 197);
+    border-radius: 25px;
+    width: 30%;
+    padding: 1%;
+}
+
+.calcimc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calcimc div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    width: fit-content;
+}
+
+input {
+    border-radius: 5px;
+    border: solid rgb(5, 136, 197);
+    border-width: 2px;
+    width: 50%;
+}
+
+button {
+    border-radius: 20px;
+    border: solid rgb(5, 136, 197);
+    border-width: 2px;
+    background-color: white;
+    color: rgb(5, 136, 197);
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.3) rotate(360deg);
+    background-color: aquamarine;
+}
+
+p {
+    border: solid rgb(5, 136, 197);
+    border-radius: 25px;
+    border-width: 2px;
+    width: 50%;
+    padding: 5%;
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1200px) {
+    .form {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .form {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
